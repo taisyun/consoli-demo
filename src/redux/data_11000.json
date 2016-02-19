@@ -31,13 +31,11 @@
    },
    {
       "ACCTCD":"1130100",
-      "ACCTSNJ":"売買目的有価証券",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"売買目的有価証券"
    },
    {
       "ACCTCD":"1130200",
-      "ACCTSNJ":"1年内満期有価証券",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"1年内満期有価証券"
    },
    {
       "ACCTCD":"1141000",
@@ -46,8 +44,7 @@
    },
    {
       "ACCTCD":"1141100",
-      "ACCTSNJ":"製品",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"製品"
    },
    {
       "ACCTCD":"1141200",
@@ -61,8 +58,7 @@
    },
    {
       "ACCTCD":"1143000",
-      "ACCTSNJ":"仕掛品",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"仕掛品"
    },
    {
       "ACCTCD":"1144000",
@@ -71,8 +67,7 @@
    },
    {
       "ACCTCD":"1162000",
-      "ACCTSNJ":"前渡金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"前渡金"
    },
    {
       "ACCTCD":"1163000",
@@ -81,23 +76,19 @@
    },
    {
       "ACCTCD":"1163010",
-      "ACCTSNJ":"前払利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"前払利息"
    },
    {
       "ACCTCD":"1163100",
-      "ACCTSNJ":"未収収益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未収収益"
    },
    {
       "ACCTCD":"1163110",
-      "ACCTSNJ":"未収利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未収利息"
    },
    {
       "ACCTCD":"1163200",
-      "ACCTSNJ":"従業員等短期債権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"従業員等短期債権"
    },
    {
       "ACCTCD":"1131000",
@@ -111,18 +102,15 @@
    },
    {
       "ACCTCD":"1165000",
-      "ACCTSNJ":"仮払金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"仮払金"
    },
    {
       "ACCTCD":"1171000",
-      "ACCTSNJ":"未収消費税等",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未収消費税等"
    },
    {
       "ACCTCD":"1174000",
-      "ACCTSNJ":"短期繰延税金(借方)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"短期繰延税金(借方)"
    },
    {
       "ACCTCD":"1179000",
@@ -166,13 +154,11 @@
    },
    {
       "ACCTCD":"1213800",
-      "ACCTSNJ":"船舶",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"船舶"
    },
    {
       "ACCTCD":"1213900",
-      "ACCTSNJ":"減価累計(船舶)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"減価累計(船舶)"
    },
    {
       "ACCTCD":"1214000",
@@ -206,18 +192,15 @@
    },
    {
       "ACCTCD":"1219000",
-      "ACCTSNJ":"その他有形固定資産",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他有形固定資産"
    },
    {
       "ACCTCD":"1219900",
-      "ACCTSNJ":"減価累計(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"減価累計(その他)"
    },
    {
       "ACCTCD":"1220500",
-      "ACCTSNJ":"営業権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"営業権"
    },
    {
       "ACCTCD":"1221000",
@@ -226,38 +209,31 @@
    },
    {
       "ACCTCD":"1221010",
-      "ACCTSNJ":"借地権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"借地権"
    },
    {
       "ACCTCD":"1223000",
-      "ACCTSNJ":"商標権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"商標権"
    },
    {
       "ACCTCD":"1224000",
-      "ACCTSNJ":"実用新案権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"実用新案権"
    },
    {
       "ACCTCD":"1225000",
-      "ACCTSNJ":"意匠権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"意匠権"
    },
    {
       "ACCTCD":"1226000",
-      "ACCTSNJ":"鉱業権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"鉱業権"
    },
    {
       "ACCTCD":"1227000",
-      "ACCTSNJ":"漁業権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"漁業権"
    },
    {
       "ACCTCD":"1228000",
-      "ACCTSNJ":"ソフトウェア",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"ソフトウェア"
    },
    {
       "ACCTCD":"1229000",
@@ -276,13 +252,11 @@
    },
    {
       "ACCTCD":"1231160",
-      "ACCTSNJ":"関係会社社債",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"関係会社社債"
    },
    {
       "ACCTCD":"1231170",
-      "ACCTSNJ":"その他関社有価証券",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他関社有価証券"
    },
    {
       "ACCTCD":"1233400",
@@ -291,18 +265,15 @@
    },
    {
       "ACCTCD":"1231200",
-      "ACCTSNJ":"関係会社出資金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"関係会社出資金"
    },
    {
       "ACCTCD":"1231300",
-      "ACCTSNJ":"満期保有目的債券",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"満期保有目的債券"
    },
    {
       "ACCTCD":"1231400",
-      "ACCTSNJ":"その他有価証券",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他有価証券"
    },
    {
       "ACCTCD":"1232000",
@@ -311,18 +282,15 @@
    },
    {
       "ACCTCD":"1233000",
-      "ACCTSNJ":"従業員長期貸付金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"従業員長期貸付金"
    },
    {
       "ACCTCD":"1233100",
-      "ACCTSNJ":"関係会社長期貸付金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"関係会社長期貸付金"
    },
    {
       "ACCTCD":"1233300",
-      "ACCTSNJ":"破産･更生債権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"破産･更生債権"
    },
    {
       "ACCTCD":"1234000",
@@ -331,13 +299,11 @@
    },
    {
       "ACCTCD":"1163020",
-      "ACCTSNJ":"前払年金費用",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"前払年金費用"
    },
    {
       "ACCTCD":"1234200",
-      "ACCTSNJ":"建物賃借保証金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"建物賃借保証金"
    },
    {
       "ACCTCD":"1231500",
@@ -346,13 +312,11 @@
    },
    {
       "ACCTCD":"1235000",
-      "ACCTSNJ":"長期繰延税金(借方)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"長期繰延税金(借方)"
    },
    {
       "ACCTCD":"1235800",
-      "ACCTSNJ":"投資不動産",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"投資不動産"
    },
    {
       "ACCTCD":"1236000",
@@ -361,28 +325,23 @@
    },
    {
       "ACCTCD":"1239000",
-      "ACCTSNJ":"貸倒引当金(長期)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"貸倒引当金(長期)"
    },
    {
       "ACCTCD":"1314000",
-      "ACCTSNJ":"創立費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"創立費"
    },
    {
       "ACCTCD":"1315000",
-      "ACCTSNJ":"開業費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"開業費"
    },
    {
       "ACCTCD":"1311000",
-      "ACCTSNJ":"新株発行費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"新株発行費"
    },
    {
       "ACCTCD":"1316000",
-      "ACCTSNJ":"社債発行費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"社債発行費"
    },
    {
       "ACCTCD":"1312000",
@@ -391,33 +350,27 @@
    },
    {
       "ACCTCD":"1317000",
-      "ACCTSNJ":"開発費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"開発費"
    },
    {
       "ACCTCD":"1318000",
-      "ACCTSNJ":"試験研究費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"試験研究費"
    },
    {
       "ACCTCD":"1318900",
-      "ACCTSNJ":"建設利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"建設利息"
    },
    {
       "ACCTCD":"1319000",
-      "ACCTSNJ":"繰延資産(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延資産(その他)"
    },
    {
       "ACCTCD":"2121000",
-      "ACCTSNJ":"支払手形",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払手形"
    },
    {
       "ACCTCD":"2122000",
-      "ACCTSNJ":"設備関係支払手形",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"設備関係支払手形"
    },
    {
       "ACCTCD":"2123000",
@@ -436,8 +389,7 @@
    },
    {
       "ACCTCD":"2133000",
-      "ACCTSNJ":"1年内償還転換社債",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"1年内償還転換社債"
    },
    {
       "ACCTCD":"2141000",
@@ -451,13 +403,11 @@
    },
    {
       "ACCTCD":"2151903",
-      "ACCTSNJ":"リース未払金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"リース未払金"
    },
    {
       "ACCTCD":"2151910",
-      "ACCTSNJ":"設備未払金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"設備未払金"
    },
    {
       "ACCTCD":"2152000",
@@ -466,8 +416,7 @@
    },
    {
       "ACCTCD":"2152010",
-      "ACCTSNJ":"未払利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未払利息"
    },
    {
       "ACCTCD":"2160000",
@@ -476,18 +425,15 @@
    },
    {
       "ACCTCD":"2161100",
-      "ACCTSNJ":"未払事業税",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未払事業税"
    },
    {
       "ACCTCD":"2161200",
-      "ACCTSNJ":"未払事業所税",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未払事業所税"
    },
    {
       "ACCTCD":"2162000",
-      "ACCTSNJ":"未払法人税及び住民税",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"未払法人税及び住民税"
    },
    {
       "ACCTCD":"2162500",
@@ -506,13 +452,11 @@
    },
    {
       "ACCTCD":"2191000",
-      "ACCTSNJ":"前受収益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"前受収益"
    },
    {
       "ACCTCD":"2191010",
-      "ACCTSNJ":"前受利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"前受利息"
    },
    {
       "ACCTCD":"2193000",
@@ -521,18 +465,15 @@
    },
    {
       "ACCTCD":"2194000",
-      "ACCTSNJ":"仮受金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"仮受金"
    },
    {
       "ACCTCD":"2194500",
-      "ACCTSNJ":"従業員等短期債務",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"従業員等短期債務"
    },
    {
       "ACCTCD":"2195000",
-      "ACCTSNJ":"短期繰延税金(貸方)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"短期繰延税金(貸方)"
    },
    {
       "ACCTCD":"2199000",
@@ -556,8 +497,7 @@
    },
    {
       "ACCTCD":"2221010",
-      "ACCTSNJ":"関係会社長期借入金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"関係会社長期借入金"
    },
    {
       "ACCTCD":"2231000",
@@ -566,23 +506,19 @@
    },
    {
       "ACCTCD":"2241000",
-      "ACCTSNJ":"長期未払金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"長期未払金"
    },
    {
       "ACCTCD":"2222000",
-      "ACCTSNJ":"長期リース未払金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"長期リース未払金"
    },
    {
       "ACCTCD":"2243000",
-      "ACCTSNJ":"従業員等長期債務",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"従業員等長期債務"
    },
    {
       "ACCTCD":"2291000",
-      "ACCTSNJ":"長期繰延税金(貸方)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"長期繰延税金(貸方)"
    },
    {
       "ACCTCD":"2299000",
@@ -601,8 +537,7 @@
    },
    {
       "ACCTCD":"3311000",
-      "ACCTSNJ":"利益準備金",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益準備金"
    },
    {
       "ACCTCD":"3411000",
@@ -611,8 +546,7 @@
    },
    {
       "ACCTCD":"3399000",
-      "ACCTSNJ":"評価差額(資本連結)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"評価差額(資本連結)"
    },
    {
       "ACCTCD":"3511000",
@@ -621,38 +555,31 @@
    },
    {
       "ACCTCD":"3412000",
-      "ACCTSNJ":"その他評価差額金累計",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金累計"
    },
    {
       "ACCTCD":"3413000",
-      "ACCTSNJ":"その他評価差額金(税)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金(税)"
    },
    {
       "ACCTCD":"3513000",
-      "ACCTSNJ":"繰延ヘッジ損益累計",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延ヘッジ損益累計"
    },
    {
       "ACCTCD":"3515000",
-      "ACCTSNJ":"土地再評価差額金累計",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"土地再評価差額金累計"
    },
    {
       "ACCTCD":"3520100",
-      "ACCTSNJ":"為替換算調整勘定累計",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替換算調整勘定累計"
    },
    {
       "ACCTCD":"3514000",
-      "ACCTSNJ":"新株予約権",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"新株予約権"
    },
    {
       "ACCTCD":"4000000",
-      "ACCTSNJ":"売上高",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"売上高"
    },
    {
       "ACCTCD":"4100000",
@@ -661,13 +588,11 @@
    },
    {
       "ACCTCD":"4200000",
-      "ACCTSNJ":"商品売上高",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"商品売上高"
    },
    {
       "ACCTCD":"4400000",
-      "ACCTSNJ":"役務収益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"役務収益"
    },
    {
       "ACCTCD":"5000000",
@@ -681,8 +606,7 @@
    },
    {
       "ACCTCD":"6111010",
-      "ACCTSNJ":"荷造費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"荷造費"
    },
    {
       "ACCTCD":"6111020",
@@ -696,13 +620,11 @@
    },
    {
       "ACCTCD":"6111030",
-      "ACCTSNJ":"見本費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"見本費"
    },
    {
       "ACCTCD":"6112200",
-      "ACCTSNJ":"保管料",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"保管料"
    },
    {
       "ACCTCD":"6111100",
@@ -756,8 +678,7 @@
    },
    {
       "ACCTCD":"6136000",
-      "ACCTSNJ":"事業税等",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"事業税等"
    },
    {
       "ACCTCD":"6135000",
@@ -801,18 +722,15 @@
    },
    {
       "ACCTCD":"6124000",
-      "ACCTSNJ":"退職給付費用",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"退職給付費用"
    },
    {
       "ACCTCD":"6137300",
-      "ACCTSNJ":"試験研究費償却費",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"試験研究費償却費"
    },
    {
       "ACCTCD":"6142200",
-      "ACCTSNJ":"繰延資産償却費(販管)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延資産償却費(販管)"
    },
    {
       "ACCTCD":"6149900",
@@ -826,13 +744,11 @@
    },
    {
       "ACCTCD":"7111100",
-      "ACCTSNJ":"有価証券利息",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券利息"
    },
    {
       "ACCTCD":"7111110",
-      "ACCTSNJ":"有価証券利息(償却額)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券利息(償却額)"
    },
    {
       "ACCTCD":"7114000",
@@ -841,13 +757,11 @@
    },
    {
       "ACCTCD":"7116100",
-      "ACCTSNJ":"固定資産賃貸料",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"固定資産賃貸料"
    },
    {
       "ACCTCD":"7116200",
-      "ACCTSNJ":"有価証券売却益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券売却益"
    },
    {
       "ACCTCD":"7116300",
@@ -856,28 +770,23 @@
    },
    {
       "ACCTCD":"7116400",
-      "ACCTSNJ":"仕入割引",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"仕入割引"
    },
    {
       "ACCTCD":"7116500",
-      "ACCTSNJ":"有価証券評価益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券評価益"
    },
    {
       "ACCTCD":"7116600",
-      "ACCTSNJ":"有価証券運用益(評価)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券運用益(評価)"
    },
    {
       "ACCTCD":"7116650",
-      "ACCTSNJ":"有価証券運用益(売却)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券運用益(売却)"
    },
    {
       "ACCTCD":"7116800",
-      "ACCTSNJ":"貸倒引当金戻入等",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"貸倒引当金戻入等"
    },
    {
       "ACCTCD":"7119000",
@@ -901,53 +810,43 @@
    },
    {
       "ACCTCD":"7121100",
-      "ACCTSNJ":"売上現金割引",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"売上現金割引"
    },
    {
       "ACCTCD":"7122300",
-      "ACCTSNJ":"社債発行費償却",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"社債発行費償却"
    },
    {
       "ACCTCD":"7122400",
-      "ACCTSNJ":"創立費償却",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"創立費償却"
    },
    {
       "ACCTCD":"7122500",
-      "ACCTSNJ":"開業費償却",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"開業費償却"
    },
    {
       "ACCTCD":"7125100",
-      "ACCTSNJ":"有価証券売却損",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券売却損"
    },
    {
       "ACCTCD":"7125200",
-      "ACCTSNJ":"有価証券評価損",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券評価損"
    },
    {
       "ACCTCD":"7125300",
-      "ACCTSNJ":"有価証券運用損(評価)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券運用損(評価)"
    },
    {
       "ACCTCD":"7125350",
-      "ACCTSNJ":"有価証券運用損(売却)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"有価証券運用損(売却)"
    },
    {
       "ACCTCD":"7125400",
-      "ACCTSNJ":"棚卸資産評価損",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"棚卸資産評価損"
    },
    {
       "ACCTCD":"7125600",
-      "ACCTSNJ":"為替差損",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替差損"
    },
    {
       "ACCTCD":"7129000",
@@ -961,8 +860,7 @@
    },
    {
       "ACCTCD":"7212000",
-      "ACCTSNJ":"投資有証売却益(特別)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"投資有証売却益(特別)"
    },
    {
       "ACCTCD":"7218900",
@@ -981,13 +879,11 @@
    },
    {
       "ACCTCD":"7222000",
-      "ACCTSNJ":"投資有証売却損(特別)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"投資有証売却損(特別)"
    },
    {
       "ACCTCD":"7223000",
-      "ACCTSNJ":"投資有証評価損(特別)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"投資有証評価損(特別)"
    },
    {
       "ACCTCD":"7228900",
@@ -1011,88 +907,71 @@
    },
    {
       "ACCTCD":"7419000",
-      "ACCTSNJ":"法人税･住民税･事業税",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"法人税･住民税･事業税"
    },
    {
       "ACCTCD":"7420000",
-      "ACCTSNJ":"法人税等調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"法人税等調整額"
    },
    {
       "ACCTCD":"7961100",
-      "ACCTSNJ":"その他評価差額金-増減",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金-増減"
    },
    {
       "ACCTCD":"7961150",
-      "ACCTSNJ":"その他評価差額金-組替調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金-組替調整額"
    },
    {
       "ACCTCD":"7961200",
-      "ACCTSNJ":"その他評価差額金-換算調整",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金-換算調整"
    },
    {
       "ACCTCD":"7961300",
-      "ACCTSNJ":"その他評価差額金-税効果",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"その他評価差額金-税効果"
    },
    {
       "ACCTCD":"7962100",
-      "ACCTSNJ":"繰延ヘッジ損益-増減",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延ヘッジ損益-増減"
    },
    {
       "ACCTCD":"7962150",
-      "ACCTSNJ":"繰延ヘッジ損益-組替調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延ヘッジ損益-組替調整額"
    },
    {
       "ACCTCD":"7962200",
-      "ACCTSNJ":"繰延ヘッジ損益-換算調整",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延ヘッジ損益-換算調整"
    },
    {
       "ACCTCD":"7962300",
-      "ACCTSNJ":"繰延ヘッジ損益-税効果",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"繰延ヘッジ損益-税効果"
    },
    {
       "ACCTCD":"7963100",
-      "ACCTSNJ":"土地再評価差額金-増減",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"土地再評価差額金-増減"
    },
    {
       "ACCTCD":"7963200",
-      "ACCTSNJ":"土地再評価差額金-換算調整",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"土地再評価差額金-換算調整"
    },
    {
       "ACCTCD":"7963300",
-      "ACCTSNJ":"土地再評価差額金-税効果",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"土地再評価差額金-税効果"
    },
    {
       "ACCTCD":"7964100",
-      "ACCTSNJ":"為替換算調整勘定-増減",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替換算調整勘定-増減"
    },
    {
       "ACCTCD":"7964150",
-      "ACCTSNJ":"為替換算調整勘定-組替調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替換算調整勘定-組替調整額"
    },
    {
       "ACCTCD":"7964200",
-      "ACCTSNJ":"為替換算調整勘定-換算調整",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替換算調整勘定-換算調整"
    },
    {
       "ACCTCD":"7964300",
-      "ACCTSNJ":"為替換算調整勘定-税効果",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"為替換算調整勘定-税効果"
    },
    {
       "ACCTCD":"8712000",
@@ -1101,93 +980,75 @@
    },
    {
       "ACCTCD":"8712500",
-      "ACCTSNJ":"資本剰余金期首調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余金期首調整額"
    },
    {
       "ACCTCD":"8713000",
-      "ACCTSNJ":"新株式発行高",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"新株式発行高"
    },
    {
       "ACCTCD":"8714000",
-      "ACCTSNJ":"減少差益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"減少差益"
    },
    {
       "ACCTCD":"8715000",
-      "ACCTSNJ":"自己株式処分差益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"自己株式処分差益"
    },
    {
       "ACCTCD":"8716000",
-      "ACCTSNJ":"親会社株式処分差益",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"親会社株式処分差益"
    },
    {
       "ACCTCD":"8790000",
-      "ACCTSNJ":"資本剰余増加(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余増加(その他)"
    },
    {
       "ACCTCD":"8811000",
-      "ACCTSNJ":"資本剰余配当(前期)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(前期)"
    },
    {
       "ACCTCD":"8812000",
-      "ACCTSNJ":"資本剰余配当(親前期)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(親前期)"
    },
    {
       "ACCTCD":"8813000",
-      "ACCTSNJ":"資本剰余配当(中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(中間)"
    },
    {
       "ACCTCD":"8814000",
-      "ACCTSNJ":"資本剰余配当(親中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(親中間)"
    },
    {
       "ACCTCD":"8815000",
-      "ACCTSNJ":"資本剰余配当(期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(期末)"
    },
    {
       "ACCTCD":"8816000",
-      "ACCTSNJ":"資本剰余配当(親期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余配当(親期末)"
    },
    {
       "ACCTCD":"8821000",
-      "ACCTSNJ":"自己株式消却額(CS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"自己株式消却額(CS)"
    },
    {
       "ACCTCD":"8822000",
-      "ACCTSNJ":"自己株式処分差損(CS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"自己株式処分差損(CS)"
    },
    {
       "ACCTCD":"8823000",
-      "ACCTSNJ":"親株式処分差損(CS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"親株式処分差損(CS)"
    },
    {
       "ACCTCD":"8824000",
-      "ACCTSNJ":"減資による株式払戻額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"減資による株式払戻額"
    },
    {
       "ACCTCD":"8825000",
-      "ACCTSNJ":"減資株式払戻(親会社)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"減資株式払戻(親会社)"
    },
    {
       "ACCTCD":"8880000",
-      "ACCTSNJ":"資本剰余減少(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"資本剰余減少(その他)"
    },
    {
       "ACCTCD":"8111000",
@@ -1196,13 +1057,11 @@
    },
    {
       "ACCTCD":"8111060",
-      "ACCTSNJ":"利益準備金調整",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益準備金調整"
    },
    {
       "ACCTCD":"8111100",
-      "ACCTSNJ":"利益剰余金期首調整額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益剰余金期首調整額"
    },
    {
       "ACCTCD":"8400000",
@@ -1211,23 +1070,19 @@
    },
    {
       "ACCTCD":"8219000",
-      "ACCTSNJ":"利益剰余増加(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益剰余増加(その他)"
    },
    {
       "ACCTCD":"Z000000",
-      "ACCTSNJ":"(SS)土地再評価差額金取崩額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"(SS)土地再評価差額金取崩額"
    },
    {
       "ACCTCD":"8311000",
-      "ACCTSNJ":"利益準備金繰入額",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益準備金繰入額"
    },
    {
       "ACCTCD":"8313000",
-      "ACCTSNJ":"支払配当金(前期分)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払配当金(前期分)"
    },
    {
       "ACCTCD":"8313010",
@@ -1236,28 +1091,23 @@
    },
    {
       "ACCTCD":"8313100",
-      "ACCTSNJ":"支払配当金(中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払配当金(中間)"
    },
    {
       "ACCTCD":"8313110",
-      "ACCTSNJ":"支払配当金(親：中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払配当金(親：中間)"
    },
    {
       "ACCTCD":"8313200",
-      "ACCTSNJ":"支払配当金(期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払配当金(期末)"
    },
    {
       "ACCTCD":"8313210",
-      "ACCTSNJ":"支払配当金(親：期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"支払配当金(親：期末)"
    },
    {
       "ACCTCD":"8313900",
-      "ACCTSNJ":"株式配当",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"株式配当"
    },
    {
       "ACCTCD":"8314100",
@@ -1266,67 +1116,55 @@
    },
    {
       "ACCTCD":"8314110",
-      "ACCTSNJ":"取締役賞与(中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"取締役賞与(中間)"
    },
    {
       "ACCTCD":"8314120",
-      "ACCTSNJ":"取締役賞与(期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"取締役賞与(期末)"
    },
    {
       "ACCTCD":"8314200",
-      "ACCTSNJ":"監査役賞与(前期分)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"監査役賞与(前期分)"
    },
    {
       "ACCTCD":"8314210",
-      "ACCTSNJ":"監査役賞与(中間)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"監査役賞与(中間)"
    },
    {
       "ACCTCD":"8314220",
-      "ACCTSNJ":"監査役賞与(期末)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"監査役賞与(期末)"
    },
    {
       "ACCTCD":"8347000",
-      "ACCTSNJ":"自己株式消却額(SS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"自己株式消却額(SS)"
    },
    {
       "ACCTCD":"8348000",
-      "ACCTSNJ":"自己株式処分差損(SS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"自己株式処分差損(SS)"
    },
    {
       "ACCTCD":"8349000",
-      "ACCTSNJ":"親株式処分差損(SS)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"親株式処分差損(SS)"
    },
    {
       "ACCTCD":"8350000",
-      "ACCTSNJ":"利益剰余減少(その他)",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"利益剰余減少(その他)"
    },
    {
       "ACCTCD":"FT11200",
-      "ACCTSNJ":"脚注情報(残高)１",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"脚注情報(残高)１"
    },
    {
       "ACCTCD":"FT11300",
-      "ACCTSNJ":"脚注情報(残高)２",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"脚注情報(残高)２"
    },
    {
       "ACCTCD":"FT41000",
-      "ACCTSNJ":"脚注情報(増減)１",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"脚注情報(増減)１"
    },
    {
       "ACCTCD":"FT42000",
-      "ACCTSNJ":"脚注情報(増減)２",
-      "DRCR_FRGNAT":null
+      "ACCTSNJ":"脚注情報(増減)２"
    }
 ]
+

@@ -15,11 +15,16 @@ class JobList extends Component {
       afterSaveCell: this.onAfterSaveCell
     }
     this.columns = [
-      "jobId",
-      "code",
-      "name",
-      "version"
+      { id: "ACCTCD", name: "Account Code", key: true, editable: false},
+      { id: "ACCTSNJ", name: "Account Name", key: false, editable: false},
+      { id: "DRCR_FRGNAT", name: "Amount", key: false, editable: true},
+      { id: "VERSION", name: "Version", key: false, editable: false}
     ]
+    this.keyColumns = this.columns.filter( (col) => {
+      return col.key
+    }).map( (col) => {
+      return col.id
+    })
 
     this.lastEditedRow = -1
     this.lastEditedCol = -1
@@ -49,17 +54,19 @@ class JobList extends Component {
   render() {
     if( this.props.lastEdited ) {
       this.lastEditedRow = this.props.items.findIndex( (element) => {
-        return element.jobId === this.props.lastEdited.rowId
+        return element.ACCTCD === this.props.lastEdited.rowId
       })
-      this.lastEditedCol = this.columns.indexOf(this.props.lastEdited.columnName)
+      this.lastEditedCol = this.columns.findIndex( (element) => {
+        return element.id === this.props.lastEdited.columnName
+      })
     }
     return (
       <div>
         <BootstrapTable data={this.props.items} cellEdit={this.cellEditProp}>
-          <TableHeaderColumn dataField={this.columns[0]} isKey={true}>Job ID</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[1]} columnClassName={this.dataClassName}>Code</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[2]} columnClassName={this.dataClassName}>Name</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[3]}>Version</TableHeaderColumn>
+          <TableHeaderColumn dataField={this.columns[0].id} editable={false} isKey={true}>{this.columns[0].name}</TableHeaderColumn>
+          <TableHeaderColumn dataField={this.columns[1].id} editable={false}>{this.columns[1].name}</TableHeaderColumn>
+          <TableHeaderColumn dataField={this.columns[2].id} editable={true} columnClassName={this.dataClassName}>{this.columns[2].name}</TableHeaderColumn>
+          <TableHeaderColumn dataField={this.columns[3].id} editable={false}>{this.columns[3].name}</TableHeaderColumn>
         </BootstrapTable>
       </div>
     )
@@ -70,7 +77,7 @@ JobList.propTypes = {
   items: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
   lastEdited: PropTypes.shape({
-    rowId: PropTypes.number,
+    rowId: PropTypes.string,
     columnName: PropTypes.string
   })
 }

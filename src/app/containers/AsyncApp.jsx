@@ -46,7 +46,7 @@ AsyncApp.propTypes = {
   lastUpdated: PropTypes.number,
   dispatch: PropTypes.func.isRequired,
   lastEdited: PropTypes.shape({
-    rowId: PropTypes.number,
+    rowId: PropTypes.string,
     columnName: PropTypes.string
   })
 }

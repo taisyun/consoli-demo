@@ -1,5 +1,3 @@
-import initialData from './data.json'
-
 export const INIT_DATA = 'INIT_DATA'
 
 export const RESET_EDITED = 'RESET_EDITED'
@@ -53,6 +51,8 @@ export function setState(state) {
 
 export function loadInitData() {
 
+  const initialData = require('./data_11000.json')
+
   const state = Object.assign({}, {
     jobList: {
       isFetching: false,
@@ -60,6 +60,7 @@ export function loadInitData() {
       items: initialData
     }
   })
+
 
   return dispatch => {
     return dispatch(initData(state))

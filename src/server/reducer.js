@@ -14,12 +14,14 @@ function jobList(state = {
     case INIT_DATA:
       return action.state.jobList
     case ROW_EDITED:
+      const key = action.row.ACCTCD
       const newItems = state.items.map( (element) => {
-        if (element.jobId === action.row.jobId) {
-          return action.row
-        } else {
-          return element
+        if (key != null) {
+          if (element.ACCTCD === key) {
+            return action.row
+          }
         }
+        return element
       })
 
       return Object.assign({}, state.jobList, {
@@ -27,7 +29,7 @@ function jobList(state = {
         didInvalidate: false,
         items: newItems,
         lastEdited: {
-          rowId: action.row.jobId,
+          rowId: key,
           columnName: action.columnName
         }
       })
