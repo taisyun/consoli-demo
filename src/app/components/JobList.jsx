@@ -60,13 +60,16 @@ class JobList extends Component {
         return element.id === this.props.lastEdited.columnName
       })
     }
+
+
+    const cols = this.columns.map( (col) => {
+      return <TableHeaderColumn key={col.id} dataField={col.id} editable={col.editable} columnClassName={col.editable ? this.dataClassName : ""} isKey={col.key}>{col.name}</TableHeaderColumn>
+
+    })
     return (
       <div>
         <BootstrapTable data={this.props.items} cellEdit={this.cellEditProp}>
-          <TableHeaderColumn dataField={this.columns[0].id} editable={false} isKey={true}>{this.columns[0].name}</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[1].id} editable={false}>{this.columns[1].name}</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[2].id} editable={true} columnClassName={this.dataClassName}>{this.columns[2].name}</TableHeaderColumn>
-          <TableHeaderColumn dataField={this.columns[3].id} editable={false}>{this.columns[3].name}</TableHeaderColumn>
+          {cols}
         </BootstrapTable>
       </div>
     )
