@@ -5,6 +5,10 @@ import {
   SET_STATE
 } from '../redux/actions'
 
+const keyColumns = [
+  "ACCTCD"
+]
+
 function jobList(state = {
   isFetching: false,
   didInvalidate: true,
@@ -15,11 +19,27 @@ function jobList(state = {
       return action.state.jobList
     case ROW_EDITED:
       const key = action.row.ACCTCD
+      let rowKeys = {}
+      keyColumns.forEach( (keyColumn) => {
+        const key = action.row[keyColumn]
+        if (key !== undefined) {
+          rowKeys[keyColumn] = key
+        }
+      })
       const newItems = state.items.map( (element) => {
-        if (key != null) {
-          if (element.ACCTCD === key) {
-            return action.row
+        const allEqual = keyColumns.reduce( (prev, keyColumn) => {
+          if( !prev )  {
+            return false
           }
+          const key = action.row[keyColumn]
+          if (key !== undefined) {
+            return prev && element[keyColumn] === key
+          } else {
+            return false
+          }
+        }, true)
+        if (allEqual) {
+          return action.row
         }
         return element
       })
