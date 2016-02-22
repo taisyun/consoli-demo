@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import RecordList from '../components/RecordList'
 
-class AsyncApp extends Component {
+class GridView extends Component {
   constructor(props) {
     super(props)
   }
@@ -40,7 +40,7 @@ class AsyncApp extends Component {
   }
 }
 
-AsyncApp.propTypes = {
+GridView.propTypes = {
   items: PropTypes.array.isRequired,
   isFetching: PropTypes.bool.isRequired,
   lastUpdated: PropTypes.number,
@@ -67,4 +67,4 @@ function mapStateToProps(state) {
   return props
 }
 
-export default connect(mapStateToProps)(AsyncApp)
+export default connect(mapStateToProps)(GridView)
