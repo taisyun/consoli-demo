@@ -18,7 +18,6 @@ function jobList(state = {
     case INIT_DATA:
       return action.state.jobList
     case ROW_EDITED:
-      const key = action.row.ACCTCD
       let rowKeys = {}
       keyColumns.forEach( (keyColumn) => {
         const key = action.row[keyColumn]
@@ -27,17 +26,13 @@ function jobList(state = {
         }
       })
       const newItems = state.items.map( (element) => {
-        const allEqual = keyColumns.reduce( (prev, keyColumn) => {
-          if( !prev )  {
+        const allEqual = keyColumns.every( (keyColumn) => {
+          const key = rowKeys[keyColumn]
+          if (key === undefined) {
             return false
           }
-          const key = action.row[keyColumn]
-          if (key !== undefined) {
-            return prev && element[keyColumn] === key
-          } else {
-            return false
-          }
-        }, true)
+          return element[keyColumn] === key
+        })
         if (allEqual) {
           return action.row
         }
@@ -49,7 +44,7 @@ function jobList(state = {
         didInvalidate: false,
         items: newItems,
         lastEdited: {
-          rowId: key,
+          rowKeys: rowKeys,
           columnName: action.columnName
         }
       })

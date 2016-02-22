@@ -54,7 +54,19 @@ class JobList extends Component {
   render() {
     if( this.props.lastEdited ) {
       this.lastEditedRow = this.props.items.findIndex( (element) => {
-        return element.ACCTCD === this.props.lastEdited.rowId
+
+        const allEqual = this.keyColumns.every( (keyColumn) => {
+          if (this.props.lastEdited == null || this.props.lastEdited.rowKeys == null) {
+            return false
+          }
+          const key = this.props.lastEdited.rowKeys[keyColumn]
+          if (key === undefined) {
+            return false
+          }
+          return element[keyColumn] === key
+        })
+
+        return allEqual
       })
       this.lastEditedCol = this.columns.findIndex( (element) => {
         return element.id === this.props.lastEdited.columnName
