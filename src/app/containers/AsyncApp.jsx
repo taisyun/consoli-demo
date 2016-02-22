@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import JobList from '../components/JobList'
+import RecordList from '../components/RecordList'
 
 class AsyncApp extends Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class AsyncApp extends Component {
         }
         {items.length > 0 &&
           <div style={{ opacity: isFetching ? 0.5 : 1 }}>
-            <JobList items={items} lastEdited={lastEdited} />
+            <RecordList items={items} lastEdited={lastEdited} />
           </div>
         }
       </div>
@@ -52,16 +52,16 @@ AsyncApp.propTypes = {
 }
 
 function mapStateToProps(state) {
-  const items = ((state || {}).jobList || {}).items || []
+  const items = ((state || {}).recordList || {}).items || []
   const copied = items.map( o => Object.assign({}, o) )
   const props = Object.assign( {}, {
     isFetching: true,
     items: []
   }, {
-    isFetching: state.jobList.isFetching,
-    lastUpdated: state.jobList.lastUpdated,
+    isFetching: state.recordList.isFetching,
+    lastUpdated: state.recordList.lastUpdated,
     items: copied,
-    lastEdited: state.jobList.lastEdited
+    lastEdited: state.recordList.lastEdited
   } );
 
   return props

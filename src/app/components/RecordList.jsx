@@ -3,7 +3,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import { connect } from 'react-redux';
 import { resetEdited, rowEdited } from '../../redux/actions'
 
-class JobList extends Component {
+class RecordList extends Component {
 
   constructor(props) {
     super(props)
@@ -88,7 +88,7 @@ class JobList extends Component {
   }
 }
 
-JobList.propTypes = {
+RecordList.propTypes = {
   items: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
   lastEdited: PropTypes.shape({
@@ -97,4 +97,4 @@ JobList.propTypes = {
   })
 }
 
-export default connect()(JobList);
+export default connect()(RecordList);

@@ -4,7 +4,7 @@ import {
   SET_STATE
 } from '../../redux/actions'
 
-function jobList(state = {
+function recordList(state = {
   isFetching: false,
   didInvalidate: true,
   items: []
@@ -18,14 +18,14 @@ function jobList(state = {
         lastEdited: {}
       })
     case SET_STATE:
-      return action.state.jobList
+      return action.state.recordList
     default:
       return state
   }
 }
 
 const rootReducer = combineReducers({
-    jobList
+    recordList
 })
 
 export default rootReducer

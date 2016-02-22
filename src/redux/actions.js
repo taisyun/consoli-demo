@@ -54,7 +54,7 @@ export function loadInitData() {
   const initialData = require('./data_11000.json')
 
   const state = Object.assign({}, {
-    jobList: {
+    recordList: {
       isFetching: false,
       didInvalidate: true,
       items: initialData

@@ -9,14 +9,14 @@ const keyColumns = [
   "ACCTCD"
 ]
 
-function jobList(state = {
+function recordList(state = {
   isFetching: false,
   didInvalidate: true,
   items: []
 }, action) {
   switch (action.type) {
     case INIT_DATA:
-      return action.state.jobList
+      return action.state.recordList
     case ROW_EDITED:
       let rowKeys = {}
       keyColumns.forEach( (keyColumn) => {
@@ -39,7 +39,7 @@ function jobList(state = {
         return element
       })
 
-      return Object.assign({}, state.jobList, {
+      return Object.assign({}, state.recordList, {
         isFetching: false,
         didInvalidate: false,
         items: newItems,
@@ -54,7 +54,7 @@ function jobList(state = {
 }
 
 const rootReducer = combineReducers({
-  jobList
+  recordList
 })
 
 export default rootReducer
