@@ -9,7 +9,7 @@ import DevTools from './DevTools'
 const store = configureStore()
 
 const routes = <Route component={App}>
-    <Route path="*" component={GridView} />
+    <Route path="/gridview" component={GridView} />
   </Route>
 
 export default class Root extends Component {

@@ -5,6 +5,7 @@ import webpack from 'webpack'
 import http from 'http'
 import webpackMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
+import historyApiFallback   from 'connect-history-api-fallback'
 import config from '../webpack.config.js'
 import morgan from 'morgan'
 
@@ -25,6 +26,10 @@ if (!isDeveloping) {
 
 if (isDeveloping) {
   const compiler = webpack(config)
+
+  app.use(historyApiFallback({
+    verbose: false
+  }))
 
   app.use(webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
