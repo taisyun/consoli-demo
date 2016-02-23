@@ -3,13 +3,15 @@ import { Router, Route, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 import configureStore from '../configureStore'
 import App from './App'
+import Menu from './Menu'
 import GridView from './GridView'
 import DevTools from './DevTools'
 
 const store = configureStore()
 
 const routes = <Route component={App}>
-    <Route path="/gridview" component={GridView} />
+    <Route path="/gridview(/:recordset)(/:key)" component={GridView} />
+    <Route path="/" component={Menu} />
   </Route>
 
 export default class Root extends Component {

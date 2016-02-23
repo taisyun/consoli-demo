@@ -17,6 +17,18 @@ class GridView extends Component {
       <div>
         <h1>Hrdemo</h1>
         <p>
+          {this.props.params.recordset &&
+            <span>
+              Record Set : {this.props.params.recordset} {' '}
+            </span>
+          }
+          {this.props.params.key &&
+            <span>
+              Key : {this.props.params.key}
+            </span>
+          }
+        </p>
+        <p>
           {lastUpdated &&
             <span>
               Last updated at {new Date(lastUpdated).toLocaleTimeString()}.
