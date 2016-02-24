@@ -25,7 +25,8 @@ export default class SocketManager {
       this.socket = undefined
     }
 
-    this.socket = io(`${location.protocol}//${location.hostname}:${location.port}/${namespace}`)
+//    this.socket = io(`${location.protocol}//${location.hostname}:${location.port}/${namespace}`)
+    this.socket = io(`${location.protocol}//${location.hostname}:8090/${namespace}`)
 
     this.socket.on('state', state => {
       this.store.dispatch(resetEdited());

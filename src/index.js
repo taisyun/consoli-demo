@@ -16,7 +16,7 @@ const host = process.env.HOSTNAME ?  process.env.HOSTNAME : '0.0.0.0'
 const app = express()
 const httpServer = http.Server(app)
 
-startServer(httpServer)
+//startServer(httpServer)
 
 app.use(morgan('combined'))
 
