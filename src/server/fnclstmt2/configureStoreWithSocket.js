@@ -2,13 +2,13 @@ import Server from 'socket.io'
 import configureStore from './configureStore'
 import { loadInitData } from '../../redux/actions'
 
-const namespace = 'fnclstmt1'
+const namespace = 'fnclstmt2'
 
-export default function configureSocket(io) {
+export default function configureStoreWithSocket(io) {
 
   const store = configureStore()
 
-  const initialData = require('../../data/data_11000.json')
+  const initialData = require('../../data/data_38184.json')
 
   store.dispatch.bind(store)(loadInitData(initialData))
 
@@ -25,5 +25,7 @@ export default function configureSocket(io) {
     // Should probably put authentication here
     socket.on('action', store.dispatch.bind(store))
   })
+
+  return store
 }
 

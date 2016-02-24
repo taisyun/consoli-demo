@@ -2,15 +2,15 @@ import Server from 'socket.io'
 import configureStore from './configureStore'
 import { loadInitData } from '../../redux/actions'
 
-const namespace = 'fnclstmt2'
+const namespace = 'consolidated'
 
-export default function configureSocket(io) {
+export default function configureStoreWithSocket(io) {
 
   const store = configureStore()
 
-  const initialData = require('../../data/data_38184.json')
+//  const initialData = require('../../data/data_.json')
 
-  store.dispatch.bind(store)(loadInitData(initialData))
+//  store.dispatch.bind(store)(loadInitData(initialData))
 
   const items = io.of('/' + namespace)
   // Emit 'state' to socket.io when Store changes
@@ -25,5 +25,7 @@ export default function configureSocket(io) {
     // Should probably put authentication here
     socket.on('action', store.dispatch.bind(store))
   })
+
+  return store
 }
 

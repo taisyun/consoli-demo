@@ -1,11 +1,15 @@
 import Server from 'socket.io'
-import fnclstmt1_configureSocket from './fnclstmt1/configureSocket'
-import fnclstmt2_configureSocket from './fnclstmt2/configureSocket'
+import fnclstmt1_configureStoreWithSocket from './fnclstmt1/configureStoreWithSocket'
+import fnclstmt2_configureStoreWithSocket from './fnclstmt2/configureStoreWithSocket'
+import consolidated_configureStoreWithSocket from './consolidated/configureStoreWithSocket'
+import calculation from './calculation'
 
 export default function startServer(httpServer) {
 
   const io = new Server(httpServer)
-  fnclstmt1_configureSocket(io)
-  fnclstmt2_configureSocket(io)
+  const fnclstmt1_store = fnclstmt1_configureStoreWithSocket(io)
+  const fnclstmt2_store = fnclstmt2_configureStoreWithSocket(io)
+  const consolidated_store = consolidated_configureStoreWithSocket(io)
 
+  calculation(fnclstmt1_store, fnclstmt2_store, consolidated_store)
 }
