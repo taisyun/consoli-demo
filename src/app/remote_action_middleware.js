@@ -1,9 +1,13 @@
 import { RESET_EDITED, SET_STATE, CHANGE_NAMESPACE } from '../redux/actions'
 
-export default socket => store => next => action => {
+export default socketManager => store => next => action => {
+
+  if (action.type === CHANGE_NAMESPACE) {
+    socketManager.connectToNamespace(action.namespace)
+  }
 
   if (action.meta.sendToServer) {
-    socket.emit('action', action)
+    socketManager.socket.emit('action', action)
   }
 
   return next(action)
