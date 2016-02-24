@@ -9,7 +9,7 @@ import io from 'socket.io-client'
 import { resetEdited, setState } from '../redux/actions'
 
 
-const socket = io(`${location.protocol}//${location.hostname}:${location.port}/joblist`)
+const socket = io(`${location.protocol}//${location.hostname}:${location.port}/fnclstmt2`)
 
 
 const loggerMiddleware = createLogger()

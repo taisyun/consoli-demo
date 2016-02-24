@@ -1,4 +1,5 @@
 export const INIT_DATA = 'INIT_DATA'
+export const CHANGE_NAMESPACE = 'CHANGE_NAMESPACE'
 
 export const RESET_EDITED = 'RESET_EDITED'
 export const ROW_EDITED = 'ROW_EDITED'
@@ -13,6 +14,17 @@ export function initData(state) {
     },
     type: INIT_DATA,
     state
+  }
+}
+
+export function changeNamespace(namespace) {
+  return {
+    meta: {
+      sendToServer: false,
+      sendToClient: false
+    },
+    type: CHANGE_NAMESPACE,
+    namespace
   }
 }
 
@@ -49,9 +61,7 @@ export function setState(state) {
   }
 }
 
-export function loadInitData() {
-
-  const initialData = require('./data_11000.json')
+export function loadInitData(initialData) {
 
   const state = Object.assign({}, {
     recordList: {

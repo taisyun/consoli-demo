@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import RecordList from '../components/RecordList'
+import { changeNamespace } from '../../redux/actions'
 
 class GridView extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class GridView extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props
+    dispatch(changeNamespace(this.props.params.recordset))
   }
 
   render() {
