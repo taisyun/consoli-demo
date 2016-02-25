@@ -45,7 +45,8 @@ function recordList(state = {
         items: newItems,
         lastEdited: {
           rowKeys: rowKeys,
-          columnName: action.columnName
+          columnName: action.columnName,
+          date: new Date()
         }
       })
     default:
