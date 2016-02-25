@@ -17,6 +17,6 @@ export default function startServer(httpServer) {
   const consolidated_store = consolidated_configureStoreWithSocket(io)
 
   calculation(fnclstmt1_store, fnclstmt2_store, consolidated_store)
-  
+
   console.log('socket.io server started')
 }

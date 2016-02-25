@@ -1,16 +1,11 @@
 import Server from 'socket.io'
-import configureStore from './configureStore'
-import { loadInitData } from '../../redux/actions'
+import configureStoreWithIniData from './configureStoreWithIniData'
 
 const namespace = 'fnclstmt2'
 
 export default function configureStoreWithSocket(io) {
 
-  const store = configureStore()
-
-  const initialData = require('../../data/data_38184.json')
-
-  store.dispatch.bind(store)(loadInitData(initialData))
+  const store = configureStoreWithIniData()
 
   const items = io.of('/' + namespace)
   // Emit 'state' to socket.io when Store changes
