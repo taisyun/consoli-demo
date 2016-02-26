@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import RecordList from '../components/RecordList'
 import { changeNamespace } from '../../redux/actions'
+import { recordSetMetas } from '../../constants/recordSetMetas'
 
 class GridView extends Component {
   constructor(props) {
@@ -15,9 +16,12 @@ class GridView extends Component {
 
   render() {
     const { items, isFetching, lastUpdated, lastEdited } = this.props
+    const meta = recordSetMetas.find( (meta) => {
+      return meta.id === this.props.params.recordset
+    })
     return (
       <div>
-        <h1>Hrdemo</h1>
+        <h1>{meta.name_ja || ''}</h1>
         <p>
           {this.props.params.recordset &&
             <span>
