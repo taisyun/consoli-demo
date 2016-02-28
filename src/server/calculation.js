@@ -21,31 +21,40 @@ function addOperation(value1, value2) {
   return value_result
 }
 
-function recalculate(fnclstmt1_store, fnclstmt2_store, consolidated_store) {
+function recalculate(fnclstmt1_store, fnclstmt2_store, out_store) {
 
-  const fnclstmt1_recordList = fnclstmt1_store.getState().recordList || {}
-  const fnclstmt1_items = fnclstmt1_recordList.items || []
-  const fnclstmt2_recordList = fnclstmt2_store.getState().recordList || {}
-  const fnclstmt2_items = fnclstmt2_recordList.items || []
+  const in_stores = [
+    fnclstmt1_store,
+    fnclstmt2_store
+  ]
 
-  let lastEdited
-  if((fnclstmt1_recordList.lastEdited || {}).date || 0 >
-     (fnclstmt2_recordList.lastEdited || {}).date || 0) {
-    lastEdited = fnclstmt1_recordList.lastEdited
-  } else {
-    lastEdited = fnclstmt2_recordList.lastEdited
-  }
+  const in_recordLists = in_stores.map( (store) => {
+    return store.getState().recordList || {}
+  })
+
+  const in_items = in_recordLists.map( (recordList) => {
+    return recordList.items || []
+  })
+
+  const lastEdited = in_recordLists.reduce( (prev, current) => {
+    if( (prev || {}).date || 0 > (current || {}).date || 0 ) {
+      return prev
+    } else {
+      return current
+    }
+
+  }, {})
 
 
-  console.log(`fnclstmt1_items.length=${fnclstmt1_items.length} fnclstmt2_items.length=${fnclstmt2_items.length}`)
+  in_items.forEach( (item, index) => {
+    console.log(`in_items[${index}].length=${item.length}`)
+  })
+
   const result_items = []
-  const items_array = [fnclstmt1_items, fnclstmt2_items]
-
-
 
   let last_changed_row
 
-  items_array.forEach( (items) => {
+  in_items.forEach( (items) => {
     items.forEach( (in_item) => {
 
       let index = result_items.findIndex( (result_item) => {
@@ -61,36 +70,36 @@ function recalculate(fnclstmt1_store, fnclstmt2_store, consolidated_store) {
 
         result_item[VALUE] = value_result
         result_items[index] = result_item
-        if(lastEdited && lastEdited.rowKeys[KEY] === result_item[KEY]) {
+        if(lastEdited && lastEdited.rowKeys && lastEdited.rowKeys[KEY] === result_item[KEY]) {
           last_changed_row = result_item
         }
       }
     })
   })
 
-  consolidated_store.dispatch.bind(consolidated_store)(loadInitData(result_items))
+  out_store.dispatch.bind(out_store)(loadInitData(result_items))
   if(last_changed_row != null) {
-    consolidated_store.dispatch.bind(consolidated_store)(rowEdited(last_changed_row, VALUE))
+    out_store.dispatch.bind(out_store)(rowEdited(last_changed_row, VALUE))
   }
 }
 
 export default function calculation(fnclstmt1_store,
-    fnclstmt2_store, consolidated_store) {
+    fnclstmt2_store, out_store) {
 
   fnclstmt1_store.subscribe(
     () => {
       recalculate(fnclstmt1_store, fnclstmt2_store,
-                      consolidated_store)
+                      out_store)
     }
   )
 
   fnclstmt2_store.subscribe(
     () => {
       recalculate(fnclstmt1_store, fnclstmt2_store,
-                      consolidated_store)
+                      out_store)
     }
   )
 
   recalculate(fnclstmt1_store, fnclstmt2_store,
-                      consolidated_store)
+                      out_store)
 }
