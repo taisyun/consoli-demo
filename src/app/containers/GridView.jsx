@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import RecordList from '../components/RecordList'
 import { changeNamespace } from '../../redux/actions'
-import { recordSetMetas } from '../../constants/recordSetMetas'
+import { findMeta } from '../../metadata/recordSetMetas'
 
 class GridView extends Component {
   constructor(props) {
@@ -16,9 +16,7 @@ class GridView extends Component {
 
   render() {
     const { items, isFetching, lastUpdated, lastEdited } = this.props
-    const meta = recordSetMetas.find( (meta) => {
-      return meta.id === this.props.params.recordset
-    })
+    const meta = findMeta( this.props.params.recordset )
     return (
       <div>
         <h1>{meta.name_ja || ''}</h1>
@@ -50,7 +48,7 @@ class GridView extends Component {
         }
         {items.length > 0 &&
           <div style={{ opacity: isFetching ? 0.5 : 1 }}>
-            <RecordList items={items} lastEdited={lastEdited} />
+            <RecordList items={items} lastEdited={lastEdited} meta={meta}/>
           </div>
         }
       </div>

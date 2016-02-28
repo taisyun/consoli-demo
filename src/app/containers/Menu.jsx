@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
-import { recordSetMetas } from '../../constants/recordSetMetas'
+import { recordSetMetas } from '../../metadata/recordSetMetas'
 
 export default class Menu extends Component {
   render() {

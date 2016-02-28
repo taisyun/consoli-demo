@@ -42,6 +42,9 @@ function recalculate(fnclstmt1_store, fnclstmt2_store, consolidated_store) {
         let value_in = in_item[VALUE]
         let value_result = result_item[VALUE]
 
+        value_in = value_in === "" ? null : value_in
+        value_result = value_result === "" ? null : value_result
+
         if (value_in == null && value_result == null) {
           // nop
         } else {

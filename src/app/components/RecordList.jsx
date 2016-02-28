@@ -14,12 +14,7 @@ class RecordList extends Component {
       blurToSave: true,
       afterSaveCell: this.onAfterSaveCell
     }
-    this.columns = [
-      { id: "ACCTCD", name: "Account Code", key: true, editable: false},
-      { id: "ACCTSNJ", name: "Account Name", key: false, editable: false},
-      { id: "DRCR_FRGNAT", name: "Amount", key: false, editable: true},
-      { id: "VERSION", name: "Version", key: false, editable: false}
-    ]
+    this.columns = props.meta.columns
     this.keyColumns = this.columns.filter( (col) => {
       return col.key
     }).map( (col) => {
@@ -75,7 +70,7 @@ class RecordList extends Component {
 
 
     const cols = this.columns.map( (col) => {
-      return <TableHeaderColumn key={col.id} dataField={col.id} editable={col.editable} columnClassName={col.editable ? this.dataClassName : ""} isKey={col.key}>{col.name}</TableHeaderColumn>
+      return <TableHeaderColumn key={col.id} dataField={col.id} editable={col.editable} columnClassName={this.dataClassName} isKey={col.key}>{col.name}</TableHeaderColumn>
 
     })
     return (
@@ -91,6 +86,7 @@ class RecordList extends Component {
 RecordList.propTypes = {
   items: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
+  meta: React.PropTypes.object,
   lastEdited: PropTypes.shape({
     rowId: PropTypes.string,
     columnName: PropTypes.string
