@@ -3,6 +3,24 @@ import { loadInitData, rowEdited } from '../redux/actions'
 const KEY = 'ACCTCD'
 const VALUE = 'DRCR_FRGNAT'
 
+
+function addOperation(value1, value2) {
+
+  value1 = value1 === "" ? null : value1
+  value2 = value2 === "" ? null : value2
+
+  let value_result = undefined
+  if (value1 == null && value2 == null) {
+    // nop
+  } else {
+    value1 = +value1 || 0
+    value2 = +value2 || 0
+    value_result = value1 + value2
+//    value_result = value_result === NaN ? undefined : value_result
+  }
+  return value_result
+}
+
 function recalculate(fnclstmt1_store, fnclstmt2_store, consolidated_store) {
 
   const fnclstmt1_recordList = fnclstmt1_store.getState().recordList || {}
@@ -39,23 +57,12 @@ function recalculate(fnclstmt1_store, fnclstmt2_store, consolidated_store) {
       } else {
         const result_item = Object.assign( {}, result_items[index] )
 
-        let value_in = in_item[VALUE]
-        let value_result = result_item[VALUE]
+        let value_result = addOperation(result_item[VALUE], in_item[VALUE])
 
-        value_in = value_in === "" ? null : value_in
-        value_result = value_result === "" ? null : value_result
-
-        if (value_in == null && value_result == null) {
-          // nop
-        } else {
-          value_in = +value_in || 0
-          value_result = +value_result || 0
-          value_result += value_in
-          result_item[VALUE] = value_result
-          result_items[index] = result_item
-          if(lastEdited && lastEdited.rowKeys[KEY] === result_item[KEY]) {
-            last_changed_row = result_item
-          }
+        result_item[VALUE] = value_result
+        result_items[index] = result_item
+        if(lastEdited && lastEdited.rowKeys[KEY] === result_item[KEY]) {
+          last_changed_row = result_item
         }
       }
     })
