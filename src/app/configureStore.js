@@ -5,11 +5,9 @@ import rootReducer from './reducers/reducers'
 import { persistState } from 'redux-devtools'
 import DevTools from './containers/DevTools'
 import remoteActionMiddleware from './remote_action_middleware'
-import io from 'socket.io-client'
-import { resetEdited, setState } from '../redux/actions'
+import SocketManager from './socketManager'
 
-
-const socket = io(`${location.protocol}//${location.hostname}:${location.port}/joblist`)
+const socketManager = new SocketManager()
 
 
 const loggerMiddleware = createLogger()
@@ -18,7 +16,7 @@ const enhancer = compose(
   // Middleware you want to use in development:
   applyMiddleware(
     thunkMiddleware,
-    remoteActionMiddleware(socket) //,
+    remoteActionMiddleware(socketManager) //,
 //    loggerMiddleware
   ),
   // Required! Enable Redux DevTools with the monitors you chose
@@ -47,10 +45,7 @@ export default function configureStore(initialState) {
     );
   }
 
-  socket.on('state', state => {
-    store.dispatch(resetEdited());
-    store.dispatch(setState(state))
-  })
+  socketManager.bindToStore(store)
 
   return store;
 }

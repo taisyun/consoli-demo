@@ -3,7 +3,7 @@ import {
   INIT_DATA,
   ROW_EDITED,
   SET_STATE
-} from '../redux/actions'
+} from '../../redux/actions'
 
 const keyColumns = [
   "ACCTCD"
@@ -45,7 +45,8 @@ function recordList(state = {
         items: newItems,
         lastEdited: {
           rowKeys: rowKeys,
-          columnName: action.columnName
+          columnName: action.columnName,
+          date: new Date()
         }
       })
     default:
