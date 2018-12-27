@@ -7,9 +7,9 @@
     "mocha": true
   },
   "settings": {
-    "ecmascript": 6
+    "ecmascript": 6,
     "jsx": true
-  }
+  },
   "rules": {
     "indent": [2,2],
     "jsx-quotes": [2, "prefer-single"],
