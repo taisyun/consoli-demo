@@ -12,24 +12,24 @@ class GridView extends Component {
 
   componentDidMount() {
     const { dispatch } = this.props
-    dispatch(changeNamespace(this.props.params.recordset))
+    dispatch(changeNamespace(this.props.match.params.recordset))
   }
 
   render() {
     const { items, isFetching, lastUpdated, lastEdited } = this.props
-    const meta = findMeta( this.props.params.recordset )
+    const meta = findMeta( this.props.match.params.recordset )
     return (
       <div>
         <h1>{meta.name_ja || ''}</h1>
         <p>
-          {this.props.params.recordset &&
+          {this.props.match.params.recordset &&
             <span>
-              Record Set : {this.props.params.recordset} {' '}
+              Record Set : {this.props.match.params.recordset} {' '}
             </span>
           }
-          {this.props.params.key &&
+          {this.props.match.params.key &&
             <span>
-              Key : {this.props.params.key}
+              Key : {this.props.match.params.key}
             </span>
           }
         </p>
