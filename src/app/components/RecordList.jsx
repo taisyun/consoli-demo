@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import { connect } from 'react-redux';
 import { resetEdited, rowEdited } from '../../redux/actions'
@@ -86,7 +87,7 @@ class RecordList extends Component {
 RecordList.propTypes = {
   items: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
-  meta: React.PropTypes.object,
+  meta: PropTypes.object,
   lastEdited: PropTypes.shape({
     rowId: PropTypes.string,
     columnName: PropTypes.string
